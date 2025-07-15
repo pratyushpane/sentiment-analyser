@@ -3,3 +3,14 @@ scikit-learn
 pandas
 nltk
 joblib
+
+streamlit
+scikit-learn==1.7.0          # or match the version you used during model training
+imbalanced-learn             # for SMOTE
+nltk
+joblib                       # for loading/saving ML models
+pandas
+numpy
+
+matplotlib                   # for plotting (if used)
+seaborn                      # for visualizations (if used)
