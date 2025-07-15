@@ -2,12 +2,15 @@
 import streamlit as st
 import joblib
 import pandas as pd
-from utils import remove_stopwords_and_get_unique, analyze_sentiment
-
-# ✅ Add this block for NLTK data download
 import nltk
+import os  # ✅ Needed for os.path.expanduser()
+
+# ✅ Configure NLTK for Streamlit Cloud
+nltk.data.path.append(os.path.expanduser('~/.nltk_data'))
 nltk.download('punkt', quiet=True)
 nltk.download('stopwords', quiet=True)
+
+from utils import remove_stopwords_and_get_unique, analyze_sentiment
 
 # Load models and vectorizer
 dt_model = joblib.load("model_dt.pkl")
