@@ -1,16 +1,17 @@
-streamlit
-scikit-learn
-pandas
-nltk
-joblib
-
-streamlit
-scikit-learn==1.7.0          # or match the version you used during model training
-imbalanced-learn             # for SMOTE
-nltk
-joblib                       # for loading/saving ML models
-pandas
+# Core ML packages
+scikit-learn==1.5.*
+pandas==2.2.*
 numpy
+joblib
+imbalanced-learn==0.13.*
+nltk
 
-matplotlib                   # for plotting (if used)
-seaborn                      # for visualizations (if used)
+# Visualization (optional but safe to include)
+matplotlib
+seaborn
+wordcloud
+
+# Web app framework
+streamlit
+
+
